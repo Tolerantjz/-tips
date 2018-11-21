@@ -1,0 +1,4 @@
+元素fixed    页面滚动 元素 会闪动
+
+第一种，给fixed的元素添加css的样式，我试过，这个可以解决此闪动的问题。1-webkit-transform: translateZ(0);（可用）
+第二种，设置css。我是在不复杂的页面做的测试。1html, body {height:100%;overflow:auto;margin: 0;}注意，引入这个CSS可能会导致原来的页面布局出现问题，这个是为了解决IE6系列的fixed抖动问题。
